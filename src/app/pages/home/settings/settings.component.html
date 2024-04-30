@@ -1,0 +1,107 @@
+<section>
+  <div class="header">
+    <h5>Settings</h5>
+    <p>Any changes here will reflect in the final result</p>
+  </div>
+  <div class="content">
+    <div class="group-wrapper">
+      <div class="control">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value="true"
+            id="flexCheckChecked"
+            checked
+          />
+          <label class="form-check-label" for="flexCheckChecked">
+            VIDEO FORMAT
+          </label>
+        </div>
+        <div class="dropdown">
+          <button
+            class="btn"
+            type="button"
+            data-toggle="dropdown"
+            aria-expanded="false"
+          >
+            H264 - 1980x1260 AAC
+            <i class="fa-solid fa-caret-down"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+      <app-button icon="bi bi-gear" [style]="{fontSize:'19px', color: '#AAAAAA', padding: '1.5rem'}"></app-button>
+    </div>
+    <div class="group-wrapper">
+      <div class="control">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value="true"
+            id="flexCheckChecked"
+            checked
+          />
+          <label class="form-check-label" for="flexCheckChecked">
+            VISUAL WMK
+          </label>
+        </div>
+        <div class="dropdown">
+          <button
+            class="btn"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Top, Middle, Bottom
+            <i class="fa-solid fa-caret-down"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+      <app-button icon="bi bi-gear" [style]="{fontSize:'19px', color: '#AAAAAA', padding: '1.5rem'}"></app-button>
+    </div>
+    <div class="group-wrapper-2">
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value="true"
+          id="flexCheckChecked"
+        />
+        <label class="form-check-label" for="flexCheckChecked">
+          FORENSIC WATERMARK
+        </label>
+      </div>
+      <h6>Fortify Media LLC</h6>
+    </div>
+    <div class="group-wrapper-2">
+      <label class="form-check-label" for="flexCheckChecked">
+        OUTPUT FOLDER
+      </label>
+      <app-breadcrumbs [path]="['My Drive', 'Fortify Media']"></app-breadcrumbs>
+    </div>
+    <div class="warning-text">
+      <div class="message">
+        <img src="../../../../assets/images/buy-crypto.png" alt="" />
+        <span><strong>10</strong> of 200 Tokens <strong>($0.30)</strong></span>
+      </div>
+      <button class="buy-more-btn">Buy More</button>
+    </div>
+  </div>
+  <div class="footer">
+    <app-button variant="outlined">Cancle</app-button>
+    <app-button icon="fa fa-angle-right" position="right" variant="solid"
+      >Confirm</app-button
+    >
+  </div>
+</section>

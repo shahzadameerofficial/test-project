@@ -1,0 +1,31 @@
+header{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: var(--padding-wrap);
+    gap: 1.5rem;
+    border-bottom: 1px solid #E4E4E4;
+    img{
+        width: 146px;
+    }
+    .divider{
+        height: 40px;
+        width: 1px;
+        background: radial-gradient(#979797 , transparent 80%);
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        margin-right: auto;
+        a{
+            &.active{
+                color: var(--primary-color) !important;
+            }
+            &:hover{
+                color: var(--primary-color);
+            }
+        }
+    }
+
+}

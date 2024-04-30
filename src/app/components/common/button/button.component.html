@@ -1,0 +1,17 @@
+<button [title]="title" [class]="class + ' ' + variant" [style]="style">
+    @if (icon && position == 'left') {
+        <i [class]="icon"></i>
+    }
+    <ng-content></ng-content>
+    @if(icon && position == 'right') {
+        <i [class]="icon"></i>
+    }
+
+    @if(bedge && !bedgeText) {
+        <span class="floting-badge">5</span>
+    }@else if(bedge && bedgeText) {
+        <span class="floting-badge">
+           5
+        </span>
+    }
+</button>

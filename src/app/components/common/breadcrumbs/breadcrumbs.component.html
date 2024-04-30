@@ -1,0 +1,9 @@
+<div class="breadcrumbs">
+    @if(icon) {
+        <img src="../../../../assets/images/Drive.png" alt="">
+    }
+    @for (entity of path; track $index) {
+        <i class="fa-solid fa-angle-right paths"></i>
+        <a [routerLink]="entity">{{entity}}</a>
+    }
+</div>

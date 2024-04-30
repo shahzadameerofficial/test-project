@@ -1,0 +1,110 @@
+section{
+    .header{
+        padding: 1rem 1.5rem 0;
+        h5{
+            font-size: 22px;
+            font-family: "Manrope", sans-serif;
+            font-weight: 600;
+            color: #1E1E1E;
+            margin-bottom: 3px;
+        }
+        p{
+            font-family: "Plus Jakarta Sans", sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            color: #84818A;
+        }
+    }
+    .content{
+        padding: var(--padding-wrap);
+        font-family: "Roboto", sans-serif;
+        .group-wrapper{
+            border: 1px solid #EDEDED;
+            // padding: 0.5rem 1rem;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            .control{
+                border-right: 1px solid #ECECEC;
+                flex: 1;
+                padding: 0.2rem 0.5rem;
+                label{
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: #84818A;
+                }
+                button{
+                    font-weight: 500;
+                    color: #1E1E1E;
+                    width: 100%;
+                    text-align: left;
+                    position: relative;
+                    border: 0;
+                    outline: 0;
+                    background-color: 0;
+                    i{
+                        position: absolute;
+                        top: 0;
+                        right: 20px;
+                        color: #8F92A166;
+                    }
+                }
+                
+            }
+            
+        }
+        .group-wrapper-2{
+            background-color: #F8F8F8;
+            border-radius: 6px;
+            border: 1px solid #EDEDED;
+            padding: 0.5rem 1rem;
+            font-family: "Roboto", sans-serif;
+            margin-bottom: 1rem;
+            label{
+                font-size: 12px;
+                font-weight: 500;
+                color: #84818A;
+            }
+            h6{
+                color: #1E1E1E;
+                font-weight: 500;
+                font-size: 18px;
+                margin-bottom: 0;
+            }
+        }
+        .warning-text{
+            background-color: #FF9F3826;
+            border-radius: 6px;
+            overflow: hidden;
+            .message{
+                padding: .5rem;
+                text-align: center;
+                font-size: 16px;
+                font-weight: 400;
+                color: #84818A;
+                strong{
+                    color: #1E1E1E;
+                    font-weight: 500;
+                }
+            }
+            .buy-more-btn{
+                background-color: #FF9F3826;
+                border: 0;
+                outline: 0;
+                width: 100%;
+                font-size: 12px;
+                font-weight: 500;
+                padding: .3rem;
+                color: #FF9F38;
+            }
+        }
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+        margin-bottom: 1rem;
+        padding: var(--padding-wrap);
+    }
+}

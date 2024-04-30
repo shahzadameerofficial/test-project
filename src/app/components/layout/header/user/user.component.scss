@@ -1,0 +1,31 @@
+.user{
+    display: flex;
+    gap: 1rem;
+    img{
+        width: 31px;
+        height: 31px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .titles{
+        h6{
+            margin-bottom: 0;
+            color: #161616;
+            font-weight: 600;
+            font-size: 14px;
+            font-family: "Manrope", sans-serif;
+        }
+        span{
+            color: var(--primary-color);
+            font-family: "DM Sans", sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+        }
+    }
+    i{
+        color: #8F92A166;
+    }
+
+    
+}
