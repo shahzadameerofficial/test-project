@@ -6,21 +6,21 @@ section{
             font-size: 22px;
             font-family: "Manrope", sans-serif;
             font-weight: 600;
-            color: #1E1E1E;
+            color: var(--heading);
             margin-bottom: 3px;
         }
         p{
             font-family: "Plus Jakarta Sans", sans-serif;
             font-size: 12px;
             font-weight: 500;
-            color: #84818A;
+            color: var(--anchor);
         }
     }
     .content{
         padding: var(--padding-wrap);
         font-family: "Roboto", sans-serif;
         .group-wrapper{
-            border: 1px solid #EDEDED;
+            border: 1px solid var(--fade1);
             border-radius: 6px;
             display: flex;
             align-items: center;
@@ -32,11 +32,11 @@ section{
                 label{
                     font-size: 12px;
                     font-weight: 500;
-                    color: #84818A;
+                    color: var(--anchor);
                 }
                 button{
                     font-weight: 500;
-                    color: #1E1E1E;
+                    color: var(--heading);
                     width: 100%;
                     text-align: left;
                     position: relative;
@@ -57,17 +57,17 @@ section{
         .group-wrapper-2{
             background-color: #F8F8F8;
             border-radius: 6px;
-            border: 1px solid #EDEDED;
+            border: 1px solid var(--fade1);
             padding: 0.5rem 1rem;
             font-family: "Roboto", sans-serif;
             margin-bottom: 1rem;
             label{
                 font-size: 12px;
                 font-weight: 500;
-                color: #84818A;
+                color: var(--anchor);
             }
             h6{
-                color: #1E1E1E;
+                color: var(--heading);
                 font-weight: 500;
                 font-size: 18px;
                 margin-bottom: 0;
@@ -82,9 +82,9 @@ section{
                 text-align: center;
                 font-size: 16px;
                 font-weight: 400;
-                color: #84818A;
+                color: var(--anchor);
                 strong{
-                    color: #1E1E1E;
+                    color: var(--heading);
                     font-weight: 500;
                 }
             }
