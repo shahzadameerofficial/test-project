@@ -1,1 +1,69 @@
-<app-button icon="fa-solid fa-bell" iconClass="notification-button" bedgeText="5" [bedge]="true" [style]="{color: '#b0b7c3', fontSize: '16px'}"></app-button>
+<div class="dropdown" offset="[10,10]">
+  <button
+    class=""
+    type="button"
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+  >
+    <i class="fa-solid fa-bell"></i>
+    <div class="bedge">5</div>
+  </button>
+  <ul class="dropdown-menu">
+    <li class="dropdown-item heading">Notifications</li>
+    <li><hr class="dropdown-divider" /></li>
+    <li class="dropdown-item unread">
+        <a href="" class="notification">
+        <div class="titles">
+            <h6>Processing</h6>
+            <p>This processing might take one hour to complete. Please be patient</p>
+        </div>
+        <span class="timestamp">15m ago</span>
+        </a>
+    </li>
+    <li class="dropdown-item unread">
+        <a href="" class="notification">
+        <div class="titles">
+            <h6>Warning</h6>
+            <p>Your storage levels are low. Please update your plan</p>
+        </div>
+        <span class="timestamp">1d ago</span>
+        </a>
+    </li>
+    <li class="dropdown-item unread">
+        <a href="" class="notification">
+        <div class="titles">
+            <h6>Security</h6>
+            <p>We have updated our terms about storage. check it out.</p>
+        </div>
+        <span class="timestamp">3d ago</span>
+        </a>
+    </li>
+    <li class="dropdown-item unread">
+        <a href="" class="notification">
+        <div class="titles">
+            <h6>Task</h6>
+            <p>Your task has been failed to update.</p>
+        </div>
+        <span class="timestamp">4d ago</span>
+        </a>
+    </li>
+    <li class="dropdown-item unread">
+        <a href="" class="notification">
+        <div class="titles">
+            <h6>Promotion</h6>
+            <p>Update your plan to get amazing discounts.</p>
+        </div>
+        <span class="timestamp">1w ago</span>
+        </a>
+    </li>
+    <li class="dropdown-item">
+        <a href="" class="notification">
+        <div class="titles">
+            <h6>Processing</h6>
+            <p>This processing might take one hour to complete. Please be patient</p>
+        </div>
+        <span class="timestamp">15m ago</span>
+        </a>
+    </li>
+  </ul>
+</div>

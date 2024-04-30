@@ -1,0 +1,83 @@
+.dropdown{
+    button{
+        position: relative;
+        color: #b0b7c3;
+        font-size: 16px;
+        border: 0;
+        outline: 0;
+        background-color: transparent;
+        .bedge{
+            background-color: var(--error-color);
+            min-height: 15px;
+            min-width: 15px;
+            aspect-ratio: 1/1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #fff;
+            color: #fff;
+            font-size: 7px;
+            font-family: "Plus Jakarta Sans", sans-serif;
+            font-weight: 700;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(50%, -50%);
+        }
+    }
+    .dropdown-menu{
+        max-width: 250px;
+        max-height: 50vh;
+        overflow-y: auto;
+        .dropdown-item{
+            margin-bottom: 2px;
+            &.heading{
+                color: var(--anchor);
+                font-weight: 500;
+                text-align: center;
+            }
+            .notification{
+                width: auto;
+                display: flex;
+                font-family: "Manrope", sans-serif;
+                gap: 0.5rem;
+                img{
+                    width: 32px;
+                    height: 32px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+                .titles{
+                    overflow: hidden;
+                    h6{
+                        font-size: 14px;
+                        margin-bottom: 0;
+                        font-weight: 500;
+                    }
+                    p{
+                        color: var(--anchor);
+                        font-size: 12px;
+                        margin-bottom: 0;
+                    }
+                }
+                span.timestamp{
+                    font-size: 10px;
+                    color:  var(--anchor);
+                }
+                
+            }
+            &.unread{
+                background-color: #F8F8F8;
+                .notification{
+                    h6{
+                        color: var(--primary-color);
+                    }
+                    span.timestamp{
+                        color: var(--primary-color);
+                    }
+                }
+            }
+        }
+    }
+}
