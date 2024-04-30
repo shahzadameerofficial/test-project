@@ -13,7 +13,9 @@ button {
     gap: 0.5rem;
     font-weight: 600;
     cursor: pointer;
-
+    i{
+        align-self: center !important;
+    }
     span.floting-badge {
         background-color: var(--error-color);
         min-height: 15px;

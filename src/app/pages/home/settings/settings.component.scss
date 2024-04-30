@@ -1,4 +1,5 @@
 section{
+    height: 100%;
     .header{
         padding: 1rem 1.5rem 0;
         h5{
@@ -20,7 +21,6 @@ section{
         font-family: "Roboto", sans-serif;
         .group-wrapper{
             border: 1px solid #EDEDED;
-            // padding: 0.5rem 1rem;
             border-radius: 6px;
             display: flex;
             align-items: center;
@@ -106,5 +106,14 @@ section{
         grid-gap: 1rem;
         margin-bottom: 1rem;
         padding: var(--padding-wrap);
+    }
+}
+
+@media screen and (max-width: 481px){
+    section{
+        .footer{
+            grid-template-columns: 1fr;
+            grid-gap: 0.5rem;
+        }
     }
 }

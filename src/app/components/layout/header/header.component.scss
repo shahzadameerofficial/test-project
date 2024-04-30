@@ -5,8 +5,15 @@ header{
     padding: var(--padding-wrap);
     gap: 1.5rem;
     border-bottom: 1px solid #E4E4E4;
-    img{
-        width: 146px;
+    .logo{
+        overflow:hidden;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient:vertical;
+        display:-webkit-box;
+        white-space:normal;
+        img{
+            width: 146px;
+        }
     }
     .divider{
         height: 40px;
@@ -27,5 +34,11 @@ header{
             }
         }
     }
-
+}
+@media screen and (max-width:577px){
+    header{
+        .divider{
+            display: none;
+        }
+    }
 }

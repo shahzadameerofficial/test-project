@@ -8,13 +8,39 @@
         object-fit: cover;
         border-radius: 50%;
     }
+    button{
+        text-align: left;
+        border: 0;
+        outline: 0;
+        background-color: transparent;
+        position: relative;
+        padding: 0 1.5rem 0 0;
+        display: flex;
+        i{
+            position: absolute;
+            top: 0;
+            right: 0;
+
+        }
+    }
     .titles{
+        overflow:hidden;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient:vertical;
+        display:-webkit-box;
+        white-space:normal;
         h6{
             margin-bottom: 0;
             color: #161616;
             font-weight: 600;
             font-size: 14px;
             font-family: "Manrope", sans-serif;
+            line-height: 14px;
+            overflow:hidden;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient:vertical;
+            display:-webkit-box;
+            white-space:normal;
         }
         span{
             color: var(--primary-color);
@@ -26,6 +52,21 @@
     i{
         color: #8F92A166;
     }
-
-    
+}
+@media screen and (max-width:577px){
+    .user{
+        gap: 0.5rem;
+        button{
+            .titles{
+                visibility: hidden;
+                width: 0;
+            }
+            i{
+                position: static;
+                align-self: center;
+            }
+        }
+        
+        
+    }
 }

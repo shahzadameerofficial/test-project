@@ -10,5 +10,6 @@ import { RouterModule } from '@angular/router';
 })
 export class BreadcrumbsComponent {
 @Input() icon: boolean = true;
-@Input() path: string[] = []
+@Input() path: string[] = [];
+@Input() style:object = {}
 }
