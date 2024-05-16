@@ -1,76 +1,29 @@
 <section>
-  <div class="header">
-    <h5>Settings</h5>
-    <p>Any changes here will reflect in the final result</p>
+  <div class="col-12 px-4 pt-4 pb-0">
+    <h5 class="typography heading">Settings</h5>
+    <p class="typography subheading">
+      Any changes here will reflect in the final result
+    </p>
   </div>
-  <div class="content">
-    <div class="group-wrapper">
-      <div class="control">
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            value="true"
-            id="videoformat"
-            checked
-          />
-          <label class="form-check-label" for="videoformat">
-            VIDEO FORMAT
-          </label>
-        </div>
-        <div class="dropdown">
-          <button
-            class="btn"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            H264 - 1980x1260 AAC
-            <i class="fa-solid fa-caret-down"></i>
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">H264 - 1440x1024 AAC</a></li>
-            <li><a class="dropdown-item" href="#">H264 - 1280x768 AAC</a></li>
-            <li><a class="dropdown-item" href="#">H264 - 1164x684 AAC</a></li>
-          </ul>
-        </div>
-      </div>
-      <app-button icon="bi bi-gear" [style]="{fontSize:'19px', color: '#AAAAAA', padding: '1.5rem'}"></app-button>
-    </div>
-    <div class="group-wrapper">
-      <div class="control">
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            value="true"
-            id="visualwmk"
-            checked
-          />
-          <label class="form-check-label" for="visualwmk">
-            VISUAL WMK
-          </label>
-        </div>
-        <div class="dropdown">
-          <button
-            class="btn"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Top, Middle, Bottom
-            <i class="fa-solid fa-caret-down"></i>
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Top</a></li>
-            <li><a class="dropdown-item" href="#">Middle</a></li>
-            <li><a class="dropdown-item" href="#">Bottom</a></li>
-          </ul>
-        </div>
-      </div>
-      <app-button icon="bi bi-gear" [style]="{fontSize:'19px', color: '#AAAAAA', padding: '1.5rem'}"></app-button>
-    </div>
-    <div class="group-wrapper-2">
+  <div class="col-12 px-4 py-2 content">
+    <app-multiple-input
+      label="VIDEO FORMAT"
+      [options]="[
+        'H264 - 1980x1260 AAC',
+        'H264 - 1440x1024 AAC',
+        'H264 - 1280x768 AAC',
+        'H264 - 1164x864 AAC'
+      ]"
+      dataBsToggle="modal"
+      dataBsTarget="video-format"
+    ></app-multiple-input>
+    <app-multiple-input
+      label="VISUAL WMK"
+      [options]="['Top, Middle, Bottom', 'Top', 'Middle', 'Bottom']"
+      dataBsToggle="modal"
+      dataBsTarget="visual-wmk"
+    ></app-multiple-input>
+    <div class="bg-body-tertiary border rounded p-2 my-3">
       <div class="form-check">
         <input
           class="form-check-input"
@@ -78,30 +31,37 @@
           value="true"
           id="forensicwatermark"
         />
-        <label class="form-check-label" for="forensicwatermark">
+        <label class="text-secondary fs-6" for="forensicwatermark">
           FORENSIC WATERMARK
         </label>
       </div>
-      <h6>Fortify Media LLC</h6>
+      <span class="fw-medium">Fortify Media LLC</span>
     </div>
-    <div class="group-wrapper-2">
-      <label class="form-check-label" for="flexCheckChecked">
-        OUTPUT FOLDER
-      </label>
+    <div class="bg-body-tertiary border rounded p-2 my-3">
+      <span class="text-secondary fs-6">OUTPUT FOLDER </span>
       <app-breadcrumbs [path]="['My Drive', 'Fortify Media']"></app-breadcrumbs>
     </div>
-    <div class="warning-text">
-      <div class="message">
+    <div class="bg-warning-subtle rounded my-3 mb-2">
+      <div class="p-2 text-center">
         <img src="../../../../assets/images/buy-crypto.png" alt="" />
         <span><strong>10</strong> of 200 Tokens <strong>($0.30)</strong></span>
       </div>
-      <button class="buy-more-btn">Buy More</button>
+      <button class="buy-tokens-btn rounded-bottom">Buy More</button>
+    </div>
+    <div class="tokens-warning"></div>
+  </div>
+  <div class="col-12 px-4">
+    <div class="row">
+      <div class="col-md-6">
+        <app-button variant="outlined">Cancle</app-button>
+      </div>
+      <div class="col-md-6">
+        <app-button icon="fa fa-angle-right" position="right" variant="solid"
+          >Confirm</app-button
+        >
+      </div>
     </div>
   </div>
-  <div class="footer">
-    <app-button variant="outlined">Cancle</app-button>
-    <app-button icon="fa fa-angle-right" position="right" variant="solid"
-      >Confirm</app-button
-    >
-  </div>
+  <app-modal modalId="video-format">Video Config</app-modal>
+  <app-modal modalId="visual-wmk">Visual Config</app-modal>
 </section>

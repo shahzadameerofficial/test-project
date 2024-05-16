@@ -1,14 +1,62 @@
-<header>
-    <div class="logo">
-        <img src="../../../../assets/images/logo.png" />
-    </div>
-    <span class="divider"></span>
-    <nav>
-        <a routerLink="" routerLinkActive="active">Home</a>
-        <a routerLink="billing" routerLinkActive="active">Billing</a>
-        <a routerLink="users" routerLinkActive="active">Users</a>
-        <a routerLink="reports" routerLinkActive="active">Reports</a>
-    </nav>
-    <app-notifications></app-notifications>
+<header
+  class="bg-white d-flex align-items-center justify-content-start px-4 py-2 border-bottom gap-4"
+>
+  <div class="logo">
+    <img src="../../../../assets/images/logo.png" width="146" />
+  </div>
+  <span class="divider d-sm-none d-md-inline"></span>
+  <nav class="d-sm-none d-md-flex gap-4 align-items-center me-md-auto">
+    <a routerLink="/" routerLinkActive="active">Home</a>
+    <a routerLink="/billing" routerLinkActive="active">Billing</a>
+    <a routerLink="/users" routerLinkActive="active">Users</a>
+    <a routerLink="/reports" routerLinkActive="active">Reports</a>
+  </nav>
+  <app-notifications class="ms-sm-auto"></app-notifications>
+  <div class="d-sm-none d-md-inline">
     <app-user></app-user>
+  </div>
+  <div class="d-sm-inline d-md-none">
+    <app-button
+      icon="bi bi-list"
+      dataBsToggle="offcanvas"
+      [style]="{ fontSize: '18px' }"
+      dataBsTarget="menubar"
+    ></app-button>
+    <app-sidebar
+      sidebarId="menubar"
+      sidebarPosition="offcanvas-end"
+      sidebarTitle="Menubar"
+    >
+      <app-user class="mt-auto"></app-user>
+      <div class="fw-medium fs-6 my-2 pt-2 border-top">Pages</div>
+
+      <div class="list-group list-group-flush">
+        <a
+          routerLink="/"
+          routerLinkActive="active"
+          class="list-group-item list-group-item-action"
+        >
+          Home
+        </a>
+        <a
+          routerLink="/billing"
+          routerLinkActive="active"
+          class="list-group-item list-group-item-action"
+          >Billing</a
+        >
+        <a
+          routerLink="/users"
+          routerLinkActive="active"
+          class="list-group-item list-group-item-action"
+          >Users</a
+        >
+        <a
+          routerLink="/reports"
+          routerLinkActive="active"
+          class="list-group-item list-group-item-action"
+          >Reports</a
+        >
+      </div>
+    </app-sidebar>
+  </div>
 </header>

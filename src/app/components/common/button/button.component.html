@@ -1,4 +1,4 @@
-<button [title]="title" [class]="class + ' ' + variant" [style]="style">
+<button [title]="title" [class]="styleClass + ' ' + variant" [style]="style" attr.data-bs-toggle="{{ dataBsToggle}}" attr.data-bs-target="{{ '#' + dataBsTarget}}" (click)="handleClick()" [disabled]="disabled">
     @if (icon && position == 'left') {
         <i [class]="icon"></i>
     }

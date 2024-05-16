@@ -13,44 +13,26 @@ button {
     gap: 0.5rem;
     font-weight: 600;
     cursor: pointer;
+    &:active{
+        filter: brightness(90%);
+    }
+    &:disabled{
+        filter: brightness(120%);
+        cursor: not-allowed;
+    }
     i{
         align-self: center !important;
-    }
-    span.floting-badge {
-        background-color: var(--error-color);
-        min-height: 15px;
-        min-width: 15px;
-        aspect-ratio: 1/1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid #fff;
-        color: #fff;
-        font-size: 7px;
-        font-family: "Plus Jakarta Sans", sans-serif;
-        font-weight: 700;
-        border-radius: 50%;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translate(50%, -50%);
     }
 
     &.outlined {
         border: 1px solid #E2E2E2;
         padding: 9px 32px 9px 32px;
-        &:active{
-            border-color: #c7c7c7;
-        }
     }
 
     &.solid {
         background-color: var(--primary-color);
-        color: #fff;
+        color: var(--white);
         padding: 9px 32px 9px 32px;
         border: 1px solid var(--primary-color);
-        &:active{
-            filter: brightness(95%);
-        }
     }
 }

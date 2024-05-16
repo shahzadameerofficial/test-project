@@ -1,0 +1,115 @@
+section {
+  height: 100%;
+}
+section .header {
+  padding: 1rem 1.5rem 0;
+}
+section .header h5 {
+  font-size: 22px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  color: var(--heading);
+  margin-bottom: 3px;
+}
+section .header p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--anchor);
+}
+section .content {
+  padding: var(--padding-wrap);
+  font-family: "Roboto", sans-serif;
+}
+section .content .group-wrapper {
+  border: 1px solid var(--fade1);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+section .content .group-wrapper .control {
+  border-right: 1px solid #ECECEC;
+  flex: 1;
+  padding: 0.2rem 0.5rem;
+}
+section .content .group-wrapper .control label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--anchor);
+}
+section .content .group-wrapper .control button {
+  font-weight: 500;
+  color: var(--heading);
+  width: 100%;
+  text-align: left;
+  position: relative;
+  border: 0;
+  outline: 0;
+  background-color: 0;
+}
+section .content .group-wrapper .control button i {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  color: rgba(143, 146, 161, 0.4);
+}
+section .content .group-wrapper-2 {
+  background-color: #F8F8F8;
+  border-radius: 6px;
+  border: 1px solid var(--fade1);
+  padding: 0.5rem 1rem;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 1rem;
+}
+section .content .group-wrapper-2 label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--anchor);
+}
+section .content .group-wrapper-2 h6 {
+  color: var(--heading);
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+section .content .warning-text {
+  background-color: rgba(255, 159, 56, 0.1490196078);
+  border-radius: 6px;
+  overflow: hidden;
+}
+section .content .warning-text .message {
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--anchor);
+}
+section .content .warning-text .message strong {
+  color: var(--heading);
+  font-weight: 500;
+}
+section .content .warning-text .buy-more-btn {
+  background-color: rgba(255, 159, 56, 0.1490196078);
+  border: 0;
+  outline: 0;
+  width: 100%;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 0.3rem;
+  color: #FF9F38;
+}
+section .footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
+  padding: var(--padding-wrap);
+}
+
+@media screen and (max-width: 481px) {
+  section .footer {
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem;
+  }
+}/*# sourceMappingURL=settings.component.css.map */

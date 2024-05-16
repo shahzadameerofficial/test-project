@@ -1,0 +1,35 @@
+.multiple-input{
+    border: 1px solid var(--fade1);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    .control{
+        border-right: 1px solid #ECECEC;
+        flex: 1;
+        padding: 0.2rem 0.5rem;
+        label{
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--anchor);
+        }
+        button{
+            font-weight: 500;
+            color: var(--heading);
+            width: 100%;
+            text-align: left;
+            position: relative;
+            border: 0;
+            outline: 0;
+            background-color: 0;
+            i{
+                position: absolute;
+                top: 0;
+                right: 20px;
+                color: #8F92A166;
+            }
+        }
+        
+    }
+    
+}
