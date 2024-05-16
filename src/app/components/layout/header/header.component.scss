@@ -15,8 +15,12 @@ header{
         }
     }
     .list-group{
-        .active{
-            color: var(--white) !important;
+        .list-group-item{
+            &.active{
+                color: var(--primary-color) !important;
+                background-color: transparent;
+            }
         }
+        
     }
 }
